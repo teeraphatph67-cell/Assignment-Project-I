@@ -158,49 +158,6 @@ QComboBox QAbstractItemView {{
     padding: 4px;
 }}
 
-/* ── QSpinBox ─────────────────────────── */
-QSpinBox {{
-    background: {BG_CARD};
-    border: 1.5px solid {BORDER};
-    border-radius: 10px;
-    color: {TEXT_PRIMARY};
-    font-size: 13px;
-    padding: 0 10px;
-    min-height: 42px;
-}}
-QSpinBox:focus {{
-    border-color: {BORDER_FOCUS};
-}}
-QSpinBox::up-button, QSpinBox::down-button {{
-    background: {BG_APP};
-    border: none;
-    width: 22px;
-}}
-QSpinBox::up-button:hover, QSpinBox::down-button:hover {{
-    background: {PRIMARY_LITE};
-}}
-
-/* ── QCheckBox ────────────────────────── */
-QCheckBox {{
-    color: {TEXT_PRIMARY};
-    font-size: 13px;
-    spacing: 10px;
-}}
-QCheckBox::indicator {{
-    width: 18px;
-    height: 18px;
-    border-radius: 5px;
-    border: 1.5px solid #D1D5DB;
-    background: {BG_CARD};
-}}
-QCheckBox::indicator:checked {{
-    background: {PRIMARY};
-    border-color: {PRIMARY};
-}}
-QCheckBox::indicator:hover {{
-    border-color: {PRIMARY};
-}}
-
 /* ── QProgressBar ─────────────────────── */
 QProgressBar {{
     background: #F3F4F6;
@@ -214,35 +171,6 @@ QProgressBar::chunk {{
     border-radius: 6px;
     background: {PRIMARY};
 }}
-
-/* ── QSlider ──────────────────────────── */
-QSlider::groove:horizontal {{
-    background: #F3F4F6;
-    border-radius: 4px;
-    height: 8px;
-}}
-QSlider::handle:horizontal {{
-    background: {PRIMARY};
-    border-radius: 8px;
-    width: 18px;
-    height: 18px;
-    margin: -5px 0;
-    border: 2px solid {BG_CARD};
-    box-shadow: 0 0 0 1px {PRIMARY};
-}}
-QSlider::sub-page:horizontal {{
-    background: {PRIMARY};
-    border-radius: 4px;
-}}
-
-/* ── QStatusBar ───────────────────────── */
-QStatusBar {{
-    background: {BG_CARD};
-    color: {TEXT_MUTED};
-    font-size: 11px;
-    border-top: 1px solid {BORDER};
-}}
-QStatusBar::item {{ border: none; }}
 
 /* ── QGroupBox ────────────────────────── */
 QGroupBox {{

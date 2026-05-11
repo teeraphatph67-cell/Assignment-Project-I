@@ -68,11 +68,6 @@ BaseDialog (QDialog + ABC)
 | `QPushButton` | ทุกหน้า | ปุ่มกด action |
 | `QComboBox` | EntryDialog, VaultPage | เลือก category, filter |
 | `QProgressBar` | EntryDialog, RegisterDialog | แสดงความแข็งแรง |
-| `QCheckBox` | EntryDialog (Generator) | เลือกประเภทตัวอักษร |
-| `QSpinBox` | EntryDialog (Generator) | ความยาว password |
-| `QSlider` | EntryDialog (Generator) | เลื่อนความยาว |
-| `QTabWidget` | EntryDialog | แบ่งหน้า Details / Generator |
-| `QStatusBar` | MainWindow | แสดง status + นาฬิกา |
 | `QGroupBox` | EntryDialog | จัดกลุ่ม options |
 | `QLabel` | ทุกที่ | แสดงข้อความ |
 | `QFrame` | ทุกที่ | จัดกลุ่ม layout |
