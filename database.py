@@ -52,7 +52,7 @@ class Database:
         self.__conn.commit()
 
     def _seed_admin(self):
-        """สร้าง default admin ถ้ายังไม่มี user เลย"""
+        """สร้าง default admin"""
         count = self.__conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
         if count == 0:
             self.create_user("admin", "admin1234", "Administrator")

@@ -46,14 +46,11 @@ def main():
     app.setOrganizationName("OOP Project")
     app.setApplicationVersion("2.0")
 
-    # ── Apply global styles ────────────────────────────
     apply_light_palette(app)
     app.setStyleSheet(styles.global_qss())
 
-    # ── Init DB ────────────────────────────────────────
     db = Database()
 
-    # ── Launch window ──────────────────────────────────
     win = MainWindow(db)
     win.show()
 
