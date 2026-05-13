@@ -10,11 +10,9 @@ from abc import abstractmethod, ABCMeta
 from PySide6.QtWidgets import (
     QDialog, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit,
     QPushButton, QFrame, QTabWidget, QWidget, QComboBox,
-    QProgressBar, QCheckBox, QSpinBox, QSlider, QGroupBox,
-    QSizePolicy
+    QProgressBar
 )
 from PySide6.QtCore import Qt
-from PySide6.QtGui import QColor
 
 from models import PasswordAnalyzer, VaultEntry, CATEGORIES
 import styles

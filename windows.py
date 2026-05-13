@@ -1,10 +1,10 @@
 from PySide6.QtWidgets import (
     QMainWindow, QWidget, QStackedWidget, QVBoxLayout, QHBoxLayout,
     QLabel, QLineEdit, QPushButton, QFrame, QTableWidget,
-    QTableWidgetItem, QHeaderView, QAbstractItemView, QStatusBar,
-    QComboBox, QApplication, QMessageBox, QSizePolicy,
+    QTableWidgetItem, QHeaderView, QAbstractItemView,
+    QComboBox, QApplication, QMessageBox,
 )
-from PySide6.QtCore import Qt, QTimer, QDateTime
+from PySide6.QtCore import Qt, QTimer
 from PySide6.QtGui import QColor
 
 from database import Database
