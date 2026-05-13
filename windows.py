@@ -17,7 +17,6 @@ import styles
 class StatCard(QFrame):
     def __init__(self, icon, label, value, accent, parent=None):
         super().__init__(parent)
-        # ใช้ objectName เพื่อกันไม่ให้ style ซึม
         self.setObjectName("statCard")
         self.setFixedHeight(84)
         self._accent = accent
@@ -28,17 +27,23 @@ class StatCard(QFrame):
         lay.setSpacing(2)
 
         top = QLabel(f"{icon}  {label}")
-        top.setObjectName("statLabel")
         top.setStyleSheet(
-            f"QLabel#statLabel{{color:{styles.TEXT_MUTED};"
-            "font-size:9px;font-weight:700;letter-spacing:1px;"
-            "background:transparent;border:none;}}")
+                    f"color: {styles.TEXT_MUTED}; "
+                    "font-size: 9px; "
+                    "font-weight: 700; "
+                    "letter-spacing: 1px; "
+                    "background: transparent; "
+                    "border: none;"
+                )
 
         self._val = QLabel(value)
-        self._val.setObjectName("statValue")
         self._val.setStyleSheet(
-            f"QLabel#statValue{{color:{accent};font-size:22px;"
-            "font-weight:800;background:transparent;border:none;}}")
+                    f"color: {accent}; "
+                    "font-size: 22px; "
+                    "font-weight: 800; "
+                    "background: transparent; "
+                    "border: none;"
+                )
 
         lay.addWidget(top)
         lay.addWidget(self._val)
@@ -255,17 +260,15 @@ class VaultPage(QWidget):
         self._user_lbl.setAlignment(Qt.AlignCenter)
 
         self._user_lbl.setStyleSheet(f"""
-            QLabel {{
-                color: {styles.TEXT_MUTED};
-                font-size: 11px;
-
-                background-color: transparent;
-                border: none;
-                padding: 0;
-                margin: 0;
-            }}
-        """)
-
+                    QLabel {{
+                        color: {styles.TEXT_MUTED};
+                        font-size: 11px;
+                        background-color: transparent;
+                        border: none;
+                        padding: 0;
+                        margin: 0;
+                    }}
+                """)
         sl.addWidget(self._user_lbl)
 
         sl.addWidget(self._div())
